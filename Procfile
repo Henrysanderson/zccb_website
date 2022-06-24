@@ -1,1 +1,1 @@
-web: gunicorn app:zccb
+web: gunicorn --bind 0.0.0.0:$PORT zccb:app
