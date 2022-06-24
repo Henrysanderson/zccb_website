@@ -1,0 +1,42 @@
+{% extends "layouts.html" %}
+
+{% block header %}
+    <h1> {{ bishop }}</h1>
+{% endblock %}
+{% block content %}
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="{{ url_for('static', filename='images/Archbishop Chama Cropped.jpg') }}" alt="library">
+            <h2>THE MOST REV. IGNATIUS CHAMA ARCHBISHOP OF KASAMA</h2>
+            <p>Born on 12th August 1957 at Mutono’s Village in Kawambwa in the Diocese of Mansa,
+                Luapula Province. He was ordained to the Priesthood on 12th August 1984, for the Diocese of Mansa.
+                On 17th July 2008 he was appointed Bishop of Mpika, and the Apostolic Nuncio to Zambia,
+                Archbishop Nicola Girasoli, consecrated him on 28th September 2008. Installed Archbishop of Kasama on 28th April 2012. 
+            <br/>
+            <br>
+            <div class="residence">
+                <h3>Archbishop's Residence:</h3>
+                <p>Plot 611, Zambia Road, Central Town,  Box 410143 Kasama, Tel/Fax: (+260) 214 222202</p>
+                <p>Email: archkasama@hotmail.com</p>
+                <br>
+                <h3>Predecessors:</h3>
+                <ul>
+                    <li>1897 - 1911  Right Rev. Joseph Dupont, (Motomoto), M. Afr</li>
+                    <li>1913 - 1935  Right Rev. Etienne Larue. M. Afr</li>
+                    <li>1935 - 1949  Right Rev. Alexander Roy, M. Afr</li>
+                    <li>1949 - 1965  Right Rev. Marcel Daubechies, M. Afr</li>
+                    <li>1965 - 1973  Most Rev. Clement Chabukasansha</li>
+                    <li>1973 - 1990  Most Rev. Elias Mutale</li>
+                    <li>1990 - 2009  Most Rev. James Mwewa Spaita</li>
+                    <li>2012 - current  Most Rev. Ignatius Chama</li>
+                    
+                </ul>
+            </div><br>
+
+            <a href="{{ url_for('KasamaDiocese') }}" class="btn-intro abt-btn">Kasama Diocese</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

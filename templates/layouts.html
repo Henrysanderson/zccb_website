@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {{ title }}</title>
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href= "{{ url_for('static', filename='main.css') }}">
+
+    <!-- BOOTSTRAP FONT-AWESOME -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <!-- HEADER SECTION -->
+    <section class="{{state }}" >
+        <nav>
+            <a href="{{ url_for('home')}}">LOGO</a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="{{ url_for('home')}}">HOME</a></li>
+                        <div class="dropdown">
+                            <a class="dropbtn">BISHOPS</a>
+                            <div class="dropdown-content">
+                              <a href="{{ url_for('BishopM')}}">THE RIGHT REV. CLEMENT MULENGA</a>
+                              <a href="{{ url_for('BishopZumaile')}}">THE RIGHT REV. GEORGE COSMAS ZUMAILE LUNGU</a>
+                              <a href="{{ url_for('BishopKalumba')}}">THE RIGHT REV. VALENTINE KALUMBA</a>
+                              <a href="{{ url_for('BishopChilekwa')}}">THE RIGHT. REV. PATRICK CHILEKWA CHISANGA OFM CONV.</a>
+                              <a href="{{ url_for('BishopKasonde')}}">THE RIGHT REV. CHARLES J. S. KASONDE</a>
+                              <a href="{{ url_for('BishopMulandu')}}">THE RIGHT REV. EDWIN MULANDU</a>
+                              <a href="{{ url_for('BishopMweempwa')}}">BISHOP RAPHAEL MWEEMPWA</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <a class="dropbtn">ARCHBISHOPS</a>
+                            <div class="dropdown-content">
+                              <a href="{{ url_for('ArchbishopChama')}}">THE MOST REV. IGNATIUS CHAMA</a>
+                              <a href="{{ url_for('ArchbishopBanda')}}">THE MOST REVEREND DR. ALICK BANDA</a>
+                              <a href="{{ url_for('ArchbishopGallone')}}">ARCHBISHOP GIANFRANCO GALLONE</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <a class="dropbtn">DIOCESE</a>
+                            <div class="dropdown-content">
+                              <a href="{{ url_for('KabweDiocese')}}">KABWE DIOCESE</a>
+                              <a href="{{ url_for('ChipataDiocese')}}">CHIPATA DIOCESE</a>
+                              <a href="{{ url_for('KasamaDiocese')}}">KASAMA DIOCESE</a>
+                              <a href="{{ url_for('LivingstoneDiocese')}}">LIVINGSTONE DIOCESE</a>
+                              <a href="{{ url_for('MansaDiocese')}}">MANSA DIOCESE</a>
+                              <a href="{{ url_for('LusakaDiocese')}}">LUSAKA DIOCESE</a>
+                              <a href="{{ url_for('MpikaDiocese')}}">MPIKA DIOCESE</a>
+                              <a href="{{ url_for('MonguDiocese')}}">MONGU DIOCESE</a>
+                              <a href="{{ url_for('MonzeDiocese')}}">MONZE DIOCESE</a>
+                              <a href="{{ url_for('NdolaDiocese')}}">NDOLA DIOCESE</a>
+                              <a href="{{ url_for('SolweziDiocese')}}">SOLWEZI DIOCESE</a>
+                            </div>
+                        </div>
+                        <li><a href="#">NEWS</a></li>
+                        <li><a href="{{ url_for('about') }}">ABOUT</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                        
+                    </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+           
+        </nav>
+        {% block header %}
+        {% endblock %}
+    </section>
+     
+        <!-- block content -->
+    {% block content %}
+    {% endblock %}
+
+    <!-- FOOTER -->
+    <section class="footer">
+        <h4> <a href="#">About Us</a> </h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Facilis accusantium eos cum excepturi <br/> ducimus eum, voluptatem quod similique 
+        voluptas necessitatbus amet aliquam ab, minima nam at 
+        adipisci voluptatum vel maxime?</p>
+
+        <div class="icon">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+    </section>
+ 
+    <!-- JAVASCRIPT FOR TOGGLE MENU -->
+<script>
+    var navlinks = document.getElementById("navlinks");
+
+    function showMenu(){
+        navlinks.style.right = "0"
+    }
+    function hideMenu(){
+        navlinks.style.right = "-200px"
+    }
+</script>
+</body>
+</html>

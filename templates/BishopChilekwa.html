@@ -1,0 +1,41 @@
+{% extends "layouts.html" %}
+
+{% block header %}
+    <h1> {{ bishop }}</h1>
+{% endblock %}
+{% block content %}
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="{{ url_for('static', filename='images/Archbishop Banda Cropped.jpg') }}" alt="Archbishop Banda">
+            <h2>THE RIGHT. REV. PATRICK CHILEKWA CHISANGA OFM CONV. BISHOP OF MANSA</h2>
+            <p>Born on May 16, 1971, in Mufulira. Rt. Rev. Patrick Chilekwa Chisanga is a professed member of Order of Friars Minor 
+                Conventuals (1992). He had his perpetual vows in 1998 and was ordained priest on 27th June 1999.  His pastoral experience 
+                has been working as Parish Priest of Sts. Michael and Noah Parishes in Kitwe, Zambia (1999-2001); Vice Guardian 
+                at St Bonaventure College and as Assistant Parish Priest of Chawama Parish in Lusaka (2001-2006). His other 
+                appointments include Director of Formation for the students of Theology and Lecturer of Psychology at St. Bonaventure 
+                College, Lusaka (2012-2013). Bishop Chisanga has a Licentiate degree in Clinical Psychology from Pontifical 
+                Gregorian University, Rome (2006). He was Minister Provincial of Conventual Franciscans for Zambia and Malawi
+                from 2008 to 2012. Pope Francis appointed him Bishop of Mansa on 30th November 2013 and was ordained Bishop
+                on 1st February, 2014, by Archbishop Ignatius Chama.</p>
+            <br/>
+            <br>
+            <div class="residence">
+                <h3>Predecessors:</h3>
+                <ul>
+                    <li>1952 – 1961 	Very Rev. Rene Pailloux M. Afr.  (Pref. Apostolic)</li>
+                    <li>1961 – 1971	    Right Rev. Rene Pailloux M. Afr. (Retired))</li>
+                    <li>1971 – 1973 	Right Rev. Elias Mutale (Transferred to Kasama)</li>
+                    <li>1974 – 1991 	Right Rev. James Spaita (Transferred to Kasama)</li>
+                    <li>1991 – 1993 	Very Rev. Fr. Joseph Musonda (Vicar Capitular)</li>
+                    <li>1993 – 2009 	Right Rev. Aaron A. Chisha (Retired)</li>
+                    <li>2009 – 2014 	Very Rev. Mike Merizzi (Vicar Capitular)</li>
+                </ul>
+            </div><br>
+
+            <a href="{{ url_for('MansaDiocese') }}" class="btn-intro abt-btn">Mansa Diocese</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,135 @@
+{% extends "layouts.html" %}
+
+{% block header %}
+<div class="text-box">
+    <h1>WELCOME TO ZCCB</h1>
+    <p> Lorem ipsum dolor sit amet consectetur,
+        adipisicing elit. Commodi dolorum ab nihil totam
+        doloremque officia,  </p>
+    <a href="{{ url_for('about') }}" class="btn-intro">Learn More</a>
+</div>
+{%endblock%}
+
+{% block content %}
+
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>What is Zambia Conference of Catholics Bishops</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Dicta fugit doloremque velit modi, totam qui quia nemo repudiandae suscipit 
+            illo voluptatum impedit similique quas assumenda. 
+            Molestias ipsa illum totam est.</p>
+            <br/>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, aspernatur accusamus in, cupiditate libero minus, doloremque
+            soluta quasi omnis quae iusto. Corrupti placeat veritatis velit unde iusto vero laboriosam iste?
+            Consequuntur aperiam quia rerum eos natus quasi nostrum quis cumque soluta minus porro nobis accusamus, ipsa, illo veritatis quo. Explicabo sequi veritatis deleniti, molestiae eaque labore quam quae saepe odit!
+            Ullam nihil quaerat saepe dolores corrupti ratione explicabo sit animi fuga illum delectus magnam ad architecto incidunt minima harum, excepturi iusto odit, distinctio quod eum inventore iure? Laboriosam, officiis nam.
+            Cumque beatae recusandae magnam optio, quia laboriosam delectus consectetur minima soluta nobis earum incidunt at, quam nesciunt! Dolor obcaecati suscipit accusamus, quia sequi molestiae voluptates! Ratione, natus rem. Voluptas, perspiciatis.
+            Et architecto iste veniam. Eos ullam nemo distinctio consequatur ea ipsa nesciunt ipsum est modi aut aspernatur, libero inventore nobis accusantium sit soluta iusto nam velit praesentium omnis expedita! Fuga!</p>
+                <a href="{{ url_for('about') }}" class="btn-intro abt-btn">Read More</a>
+        </div>
+        <div class="about-col">
+            <img src="{{ url_for('static', filename='images/Archbishop Banda.JPG') }}" alt="about">
+        </div>
+    </div>
+</section>
+
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>Our Mission</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Dicta fugit doloremque velit modi, totam qui quia nemo repudiandae suscipit 
+            illo voluptatum impedit similique quas assumenda. 
+            Molestias ipsa illum totam est.</p>
+            <br/>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, aspernatur accusamus in, cupiditate libero minus, doloremque
+            soluta quasi omnis quae iusto. Corrupti placeat veritatis velit unde iusto vero laboriosam iste?
+            Consequuntur aperiam quia rerum eos natus quasi nostrum quis cumque soluta minus porro nobis accusamus, ipsa, illo veritatis quo. Explicabo sequi veritatis deleniti, molestiae eaque labore quam quae saepe odit!
+            Ullam nihil quaerat saepe dolores corrupti ratione explicabo sit animi fuga illum delectus magnam ad architecto incidunt minima harum, excepturi iusto odit, distinctio quod eum inventore iure? Laboriosam, officiis nam.
+            Cumque beatae recusandae magnam optio, quia laboriosam delectus consectetur minima soluta nobis earum incidunt at, quam nesciunt! Dolor obcaecati suscipit accusamus, quia sequi molestiae voluptates! Ratione, natus rem. Voluptas, perspiciatis.
+            Et architecto iste veniam. Eos ullam nemo distinctio consequatur ea ipsa nesciunt ipsum est modi aut aspernatur, libero inventore nobis accusantium sit soluta iusto nam velit praesentium omnis expedita! Fuga!</p>
+                <a href="#" class="btn-intro abt-btn">Explore Now</a>
+        </div>
+        <div class="about-col">
+            <!-- <img src="#" alt="about"> -->
+        </div>
+    </div>
+</section>
+
+<!-- BISHOPS  SECTION -->
+<section class="campus">
+    <h1>Bishops and Archbishops</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, aspernatur accusamus in, cupiditate libero minus, doloremque
+        soluta quasi omnis quae iusto. Corrupti placeat veritatis velit unde iusto vero laboriosam iste?
+        Consequuntur aperiam quia rerum eos natus quasi</p>
+
+    <div class="row">
+        <div class="campus-col">
+            <img src="{{ url_for('static', filename='images/Archbishop Chama.JPG') }}" alt="london">
+           <a href="{{ url_for('about')}}">
+            <div class="layer">
+                <h3>Archbishop Banda</h3>
+                <p>Lorem ipsum dolor, sit amet</p>
+            </div>
+           </a>
+        </div><div class="campus-col">
+            <img src="{{ url_for('static', filename='images/Archbishop Banda.JPG') }}" alt="london">
+            <a href="{{ url_for('ArchbishopChama')}}">
+            <div class="layer">
+                <h3>Archbishop Chama</h3>
+                <p>Lorem ipsum dolor, sit amet</p>
+            </div>
+            </a>
+        </div>
+        <div class="campus-col">
+            <img src="{{ url_for('static', filename='images/Bishop Valentine Kalumba.JPG') }}" alt="london">
+            <a href="{{ url_for('ArchbishopChama')}}">
+            <div class="layer">
+                <h3>Bishop Valentine</h3>
+                <p>Lorem ipsum dolor, sit amet</p>
+            </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="facilities">
+    <h1>Our Dioces</h1>
+    <p> Lorem ipsum dolor sit amet consectetur,
+    adipisicing elit. Commodi dolorum ab nihil totam
+    doloremque officia,  </p>
+
+    <div class="row">
+        <div class="facilities-col">
+            <img src="{{ url_for('static', filename='images/Bishop Mulenga Cropped.jpg') }}" alt="library">
+            <h3><a href="{{ url_for('KasamaDiocese') }}">Kasama Diocese</a></h3>
+            <p> Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Commodi dolorum ab nihil totam
+            doloremque officia,  </p>
+        </div>
+        <div class="facilities-col">
+            <img src="{{ url_for('static', filename='images/Bishop Mulenga Cropped.jpg') }}" alt="library">
+            <h3><a href="{{ url_for('KabweDiocese') }}">Kabwe Diocese</a></h3>
+            <p> Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Commodi dolorum ab nihil totam
+            doloremque officia,  </p>
+        </div>
+        <div class="facilities-col">
+            <img src="{{ url_for('static', filename='images/Bishop Mulenga Cropped.jpg') }}" alt="library">
+            <h3><a href="{{ url_for('ChipataDiocese') }}">Chipata Diocese</a></h3>
+            <p> Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Commodi dolorum ab nihil totam
+            doloremque officia,  </p>
+        </div>
+    </div>
+</section>
+
+<section class="call-to-action">
+    <h1>Get in touch with us  form <br/>Anywhere Around The World</h1>
+
+    <a href="#" class="btn-intro"> CONTACT US</a>
+</section>
+
+{% endblock %}

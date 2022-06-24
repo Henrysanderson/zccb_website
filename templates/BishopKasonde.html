@@ -1,0 +1,40 @@
+{% extends "layouts.html" %}
+
+{% block header %}
+    <h1> {{ bishop }}</h1>
+{% endblock %}
+{% block content %}
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="{{ url_for('static', filename='images/Bishop Kasonde Cropped.jpg') }}" alt="Archbishop Banda">
+            <h2>THE RIGHT REV. CHARLES J. S. KASONDE BISHOP OF SOLWEZI</h2>
+            <p>Born on 14th December 1968 in Kalulushi. He was ordained priest on 4th August, 2001 in Ndola. 
+                Between 1990 – 1998 he studied for the Priesthood starting at Emmaus Spirituality Centre in 
+                Lusaka and then Mpima’s St. Augustine Seminary in Kabwe where he obtained a Diploma in Philosophy. 
+                He obtained a Bachelor’s Degree in Theology at St. Dominic’s Seminary in Lusaka. In addition, 
+                he holds a Diploma in Technical and Vocational Teaching from Luanshya TVTC. He was awarded a 
+                Licentiate in Systematic Theology (Dogmatic Theology) by St. Mary’s Seminary and University – 
+                Baltimore, USA after successfully completing his studies there. He has held several pastoral 
+                positions including as Diocesan Pastoral Coordinator (Ndola), Parish Priest, St. Kizito 
+                (2001 – 2004), Parochial Vicar at Sacred Heart Parish (1998 – 2000) and National Pastoral 
+                Coordinator (ZEC now ZCCB) 2004 – 2010. Appointed Bishop of Solwezi on 23rd March 2010, 
+                he was ordained as the fourth Bishop of Solwezi, on 29th May 2010.</p>
+            <br/>
+            <br>
+            <div class="residence">
+                <h3>Predecessors:</h3>
+                <ul>
+                    <li>1959 – 1969		Msgr. Rupert Hillerich OFM. Conv</li>
+                    <li>1976 – 1993	    Rt. Rev. Severiano Abdon Potani OFM Conv.</li>
+                    <li>1995 – 2004		Rt. Rev. Noel O’Regan SMA</li>
+                    <li>2007 - 2010		Rt. Rev. Alick Banda</li>
+                </ul>
+            </div><br>
+
+            <a href="{{ url_for('SolweziDiocese') }}" class="btn-intro abt-btn">Solwezi Diocese</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends "layouts.html" %}
+
+{% block header %}
+    <h1> {{ bishop }}</h1>
+{% endblock %}
+{% block content %}
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="{{ url_for('static', filename='images/Bishop Lungu Cropped.jpg') }}" alt="Bishop Lungu">
+            <h2>THE RIGHT REV. VALENTINE KALUMBA, OMI BISHOP OF LIVINGSTONE</h2>
+            <p>Born in Mufulira on 16th January, 1967. Ordained Priest on 22nd October, 
+                2005. Appointed Bishop of Livingstone on 18th June,
+                2016. Received Episcopal Ordination on 3rd September, 2016, at Livingstone, Zambia.</p>
+            <br/>
+
+            <h4><b>Predecessor: </b></h4>
+            <p>1936 – 1950:	 Very Reverend V. K. Flynn, OFM. Cap </p>
+            <p>1950 – 1974:	 Right Reverend Timothy Phelim O’Shea, OFM. Cap </p>
+            <p>1974 – 1984:	 Right Reverend Adrian Mung’andu </p>
+            <p>1985	– 2016:	 Right Reverend Raymond Mpezele. </p><br>
+            <br>
+
+            <a href="{{ url_for('LivingstoneDiocese') }}" class="btn-intro abt-btn">Livingstone Diocese</a>
+        </div>
+</section>
+
+{% endblock %}

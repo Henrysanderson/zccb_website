@@ -1,0 +1,33 @@
+{% extends "layouts.html" %}
+
+{% block header %}
+    <h1> {{ bishop }}</h1>
+{% endblock %}
+{% block content %}
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <!-- <img src="{{ url_for('static', filename='images/Archbishop Chama Cropped.jpg') }}" alt="library"> -->
+            <h2>BISHOP RAPHAEL MWEEMPWA OF MONZE</h2>
+            <p>Born 30th March, 1974</p>
+            <p>29 Jun 2002 Ordained Priest Priest of Monze, Zambia</p>
+            <p>25 February 2022 Appointed Bishop of Monze, Zambia</p>
+            <p>7 May 2022 Ordained Bishop Bishop of Monze, Zambia</p>
+            <br/>
+            <br>
+            <div class="residence">
+                <h3>Predecessors:</h3>
+                <ul>
+                    <li>1962 - 1991  Bishop James Corboy, S.J. </li>
+                    <li>1991 - 1998  Bishop Paul Lungu, S.J. </li>
+                    <li>1999 - 2014  Bishop Emilio Patriarca </li>
+                    <li>2014 - 2021  Bishop Moses Hamungole </li>  
+                </ul>
+            </div><br>
+
+            <a href="{{ url_for('MonzeDiocese') }}" class="btn-intro abt-btn">Monze Diocese</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

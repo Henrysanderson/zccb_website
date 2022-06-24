@@ -1,0 +1,39 @@
+{% extends "layouts.html" %}
+
+{% block header %}
+    <h1> {{ bishop }}</h1>
+{% endblock %}
+{% block content %}
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="{{ url_for('static', filename='images/Archbishop Banda Cropped.jpg') }}" alt="Archbishop Banda">
+            <h2>THE MOST REVEREND DR. ALICK BANDA ARCHBISHOP OF LUSAKA</h2>
+            <p>Born on 15th November 1963 in Mufulira. He was ordained Priest on 7th August 1994 in Ndola. Post-graduate studies and doctorate in Church-State Law 
+                (Canon Law), in Germany. Personal and confidential Secretary to the late Bishop Dennis H. de Jong. Parish Priest, Sts. Peter and Paul, Chingola, 
+                Chancellor of the Catholic Diocese of Ndola. Consecrated as the third Bishop of Solwezi, on 29th July 2007. Appointed Coadjutor Bishop of Ndola 
+                Diocese on 13th November, 2009. Succeeded Bishop Noel O’Reagan on 16th January,2010. Installed Bishop of Ndolaon 13th February 2010. Appointed 
+                Archbishop and Apostolic Administrator of Ndola Diocese on 30th January, 2018. Installed Archbishop of Lusaka: 14th April 2018</p>
+            <br/>
+            <br>
+            <div class="residence">
+                <h3>Predecessors:</h3>
+                <ul>
+                    <li>1927 – 1950 	Right Rev. Bruno Wolnik, SJ (Born 6/10/1882, Died 7/9/1960)</li>
+                    <li>1950 – 1969	    Most rev. Adam Kozlowiecki, SJ</li>
+                    <li>1969 – 1982     Most Rev. Emmanuel Milingo</li>
+                    <li>1982 – 1984	    Most Rev. Elias Mutale (Apostolic Administrator)</li>
+                    <li>1984 – 1997  	Most Rev. Adrian Mung’andu</li>
+                    <li>1997 – 2006	    Most Rev. Medardo J. Mazombwe (Cardinal)</li>
+                    <li>2006 - 2018     Most Rev. Telesphore George Mpundu</li>
+                    <li>2018----        Most Rev. Alick Banda</li>
+                    
+                </ul>
+            </div><br>
+
+            <a href="{{ url_for('LusakaDiocese') }}" class="btn-intro abt-btn">Lusaka Diocese</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

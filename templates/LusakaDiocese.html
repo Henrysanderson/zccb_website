@@ -1,0 +1,41 @@
+{% extends "layouts.html" %}
+
+{% block header %}
+    <h1> {{ bishop }}</h1>
+{% endblock %}
+{% block content %}
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <!-- <img src="{{ url_for('static', filename='images/Bishop Mulenga 1.jpg') }}" alt="library"> -->
+            <h2>LUSAKA DIOCESE</h2>
+            <br/>
+            <h4><b>Bishop: Most Rev. Telesphore George Mpundu</b></h4><br>
+            <h4><b>Predecessor: </b></h4>
+            <p>1927 – 1950 	Right Rev. Bruno Wolnik, SJ (Born 6/10/1882, Died 7/9/1960)</p>
+            <p>1950 – 1969	Most rev. Adam Kozlowiecki, SJ</p>
+            <p>1969 – 1982	Most Rev. Emmanuel Milingo</p>
+            <p>1982 – 1984	Most Rev. Elias Mutale (Apostolic Administrator)</p>
+            <p>1984 – 1997	Most Rev. Adrian Mung’andu</p>
+            <p>1997 – 2006	Most Rev. Medardo J. Mazombwe (Cardinal)</p><br>
+           
+        </div>
+        <div class="blog-right">
+            <h3>CONTACT</h3>
+            <div>
+                <span>P.O Box</span>
+                <span>32754, Longacres Lusaka</span>
+            </div>
+            <div>
+                <span>Tel</span>
+                <span>(+260) 211 255973/4 </span>
+            </div>
+            <div>
+                <span>Fax</span>
+                <span>(+260) 211 255975/6  </span>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

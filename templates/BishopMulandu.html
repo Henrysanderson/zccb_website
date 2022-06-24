@@ -1,0 +1,37 @@
+{% extends "layouts.html" %}
+
+{% block header %}
+    <h1> {{ bishop }}</h1>
+{% endblock %}
+{% block content %}
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="{{ url_for('static', filename='images/Bishop Mulandu Cropped.jpeg') }}" alt="Archbishop Banda">
+            <h2>THE RIGHT REV. EDWIN MULANDU BISHOP OF MPIKA</h2>
+            <p>Born on 15 Jul 1969 in Mufurila</p>
+            <p>Ordained Priest on 4 August 2001 as Priest of Ndola ndola Diocese.</p>
+            <p>Appointed Bishop of Mpika Diocese on 24th April, 2021</p>
+            <p>Ordained Bishop on 3rd July 2021 and installed	Bishop on 10th July 2021</p>
+            <br/>
+            <br>
+            <div class="residence">
+                <h3>Predecessors:</h3>
+                <ul>
+                    <li>1933-1936 	Right Rev. J. van Sambeck, M. Afr.</li>
+                    <li>1938-1946 	Right Rev. Heinrich Horst, M. Afr.</li>
+                    <li>1948-1957 	Right Rev. Joseph van den Biesen, M. Afr.</li>
+                    <li>1959-1987 	Right Rev. Adolf J.P. Fürstenberg, M. Afr.</li>
+                    <li>1987-2004 	Right Rev. Telesphore George Mpundu</li>
+                    <li>2004-2007 	Most Rev. Telesphore George Mpundu as Apostolic Administrator</li>
+                    <li>2007-2008	Rev. Fr. Robert Lavertu, Apostolic Administrator</li>
+                    <li>2008-2015   Rt. Rev. Ignatius Chama</li>
+                </ul>
+            </div><br>
+
+            <a href="{{ url_for('MpikaDiocese') }}" class="btn-intro abt-btn">Mpika Diocese</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

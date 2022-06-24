@@ -1,0 +1,26 @@
+{% extends "layouts.html" %}
+
+{% block header %}
+    <h1> {{ bishop }}</h1>
+{% endblock %}
+{% block content %}
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <!-- <img src="{{ url_for('static', filename='images/Archbishop Banda Cropped.jpg') }}" alt="Archbishop Banda"> -->
+            <h2>THE RIGHT REV. EVANS CHINYAMA CHINYEMBA, OMI BISHOP OF MONGU</h2>
+            <p>Born on August, 1967, in Lukulu, Western Province of Zambia.  He hails from Sancta 
+                Maria Oblate Mission in Lukulu. Evan Chinyama Chinyemba entered the Congregation 
+                of Oblates of Mary Immaculate pre- novitiate formation program in Lusaka, in January, 
+                1991. On August 19th, 2000 he was ordained to the Priesthood at Sancta Maria Catholic 
+                Church in Lukulu, Western Province.  On February, 15, 2011 he was appointed Bishop of 
+                Mongu Diocese. His Episcopal Ordination as second Bishop of Mongu Diocese was on 28th 
+                May, 2011 at Our Lady of Lourdes Cathedral in Mongu.</p>
+            <br/>
+            <br>
+            <a href="{{ url_for('MonguDiocese') }}" class="btn-intro abt-btn">Mongu Diocese</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,57 @@
+{% extends "layouts.html" %}
+
+{% block header %}
+    <h1> {{ bishop }}</h1>
+{% endblock %}
+{% block content %}
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="{{ url_for('static', filename='images/Bishop Mulenga Cropped.jpg') }}" alt="library">
+            <h2>THE RIGHT REV. CLEMENT MULENGA, SDB BISHOP OF KABWE</h2>
+            <p>Bishop Clement Mulenga, SDB was born in Lunte village on the 15th August, 1965.
+             He attended Lunte Primary School from grade 1 to grade 4. Later on, he went to Chitoshi
+            Primary School where he did his grade 5 to grade 7. He then went to Kasama Teachers’ Training 
+            College (Special Group) where he did his Form 1 to Form 3. Later on, he went to do his senior 
+            secondary school education at Mungwi Technical Secondary School after-which he concluded his 
+            secondary education at Luwingu Secondary School, in 1988. 
+            <br/>
+            <br>
+            After successfully completing his secondary education, he proceeded to join the Salesians 
+            of Don Bosco (SDB). He did his Pre-Novitiate in 1989 both in Luwingu and Lusaka, respectively. 
+            In the following year, he was sent to Maputsoe (Lesotho) to do Novitiate. He made his first 
+            profession on 31st January 1991 (on the Feast of Don Bosco). He studied philosophy in Pretoria 
+            (South Africa) from 1991-1992.
+            <br/>
+            <br>
+
+            He also did a teachers’ course under the Catholic Institute of Education (CIE) in Johannesburg. 
+            He was sent to Swaziland to do his practical training, at a Salesian High School, Manzini. In 
+            1994 he returned to Zambia to conclude his practical training at Don Bosco Youth Centre, 
+            Chingola.  After that he was sent to Kenya for theological studies at Tanganza College (1994-1998).
+            In 1996 he made his perpetual profession, and in 1997 he was ordained deacon. Bishop Clement 
+            Mulenga, SDB, was ordained a priest by Archbishop James Mwewa Spaita on 26th April 1998 at St. 
+            Peter’s Parish, Luwingu.
+            <br/>
+            <br>
+            As a priest, he worked at Nsakaluba Parish, Mwense (Luapula Province) as an Assistant Priest, 
+            in-charge of the youth. After that, he was transferred to Bauleni Parish, in the Archdiocese 
+            of Lusaka, in the same capacity. In the year 2000 he was sent to Chingola as an Aspirant Master. 
+            A year later, he went to Rome to pursue his post-graduate studies in the sciences of education, 
+            with specialisation in Youth Ministry and Catechetics (2001-2004). On his successful completion of 
+            studies, he was sent to Nairobi, Kenya, to work as a formator of theology students at Don Bosco 
+            Utume and to teach at Tanganza College. He was recalled to Zambia to be Rector of Don Bosco – 
+            Chingola, Youth Co-ordinator and Provincial Councillor. From 2007 - 2010, he worked in Moshi, 
+            Kilimanjaro Region, Tanzania, as Vice Rector and formator at Don Bosco College of Philosophy and 
+            Education. In 2010, Bishop Clement Mulenga, SDB, returned to Zambia to work as a Youth Coordinator 
+            for the Archdiocese of Lusaka. Hardly one year and two months later, on 29th October 2011, he was 
+            appointed by Pope Benedict XVI as the first bishop of Kabwe Diocese. His consecration took place on 
+            17th December 2011 at Railways grounds, Kabwe.
+            </p>
+            <br/>
+
+            <a href="{{ url_for('KabweDiocese') }}" class="btn-intro abt-btn">Kabwe Diocese</a>
+        </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "layouts.html" %}
+
+{% block header %}
+    <h1> {{ bishop }}</h1>
+{% endblock %}
+{% block content %}
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="{{ url_for('static', filename='images/Bishop Lungu Cropped.jpg') }}" alt="Bishop Lungu">
+            <h2>THE RIGHT REV. GEORGE COSMAS ZUMAILE LUNGU BISHOP OF CHIPATA</h2>
+            <p>Born on 4th February 1960. Ordained Priest on 29th September, 1985. Appointed Apostolic 
+                Administrator on 19th November, 1998.  Episcopal Ordination on 23rd February, 2003.</p>
+            <br/>
+
+            <h4><b>Predecessor: </b></h4>
+            <p>1937-1947 	Right Rev. Ferdinand Martin, M. Afr.</p>
+            <p>1947-1970 	Right Rev. Firm Courtemanche</p>
+            <p>1970-1996	Right Rev. Archbishop M J Mazombwe (Cardinal)</p><br>
+            <br>
+
+            <a href="{{ url_for('ChipataDiocese') }}" class="btn-intro abt-btn">Chipata Diocese</a>
+        </div>
+</section>
+
+{% endblock %}
