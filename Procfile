@@ -1,1 +1,1 @@
-web: gunicorn app:zccb
+web: gunicorn zccb:app
