@@ -33,7 +33,7 @@ def KabweDiocese():
 @app.route("/BishopZumaile")
 def BishopZumaile():
     header = 'about-header'
-    return render_template("BishopZumaile.html", state=header, bishop='Bishop Zumaile', title='Zambia Conference of Catholic Bishops - Bishop Zumaile')
+    return render_template("BishopZumaile.html", state=header, bishop='Bishop Lungu', title='Zambia Conference of Catholic Bishops - Bishop Lungu')
 
 @app.route("/ChipataDiocese")
 def ChipataDiocese():
@@ -62,7 +62,7 @@ def BishopKalumba():
 @app.route("/LivingstoneDiocese")
 def LivingstoneDiocese():
     header = 'about-header'
-    return render_template("LivingstoneDiocese.html", state=header, bishop='LINGSTONE DIOCESE', title='Zambia Conference of Catholic Bishops - Livingstone Diocese')
+    return render_template("LivingstoneDiocese.html", state=header, bishop='LIVINGSTONE DIOCESE', title='Zambia Conference of Catholic Bishops - Livingstone Diocese')
 
 
 # ARCHBISHOP BANDA AND LUSAKA DIOCESE
@@ -143,4 +143,4 @@ def ArchbishopGallone():
 
 # -------------------------------RUNNING IN DEBUG MODE-------------------------------
 if __name__ == '__main__':
-   app.run(host="0.0.0.0", port=5000)
+   app.run(host="0.0.0.0", port=5000, debug=True)

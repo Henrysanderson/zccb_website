@@ -15,9 +15,10 @@
 </head>
 <body>
     <!-- HEADER SECTION -->
-    <section class="{{state }}" >
+    <section class="{{state}}" >
+        <div class="ribbon"><h4>Zambia Conference of Catholic Bishops</h4></div>
         <nav>
-            <a href="{{ url_for('home')}}">LOGO</a>
+            <a href="{{ url_for('home')}}"><img src="{{ url_for('static', filename='images/ZCCB.png') }}" alt=""></a>
             <div class="nav-links" id="navlinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
@@ -78,10 +79,9 @@
     <!-- FOOTER -->
     <section class="footer">
         <h4> <a href="#">About Us</a> </h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Facilis accusantium eos cum excepturi <br/> ducimus eum, voluptatem quod similique 
-        voluptas necessitatbus amet aliquam ab, minima nam at 
-        adipisci voluptatum vel maxime?</p>
+        <p>The ZCCB is a member of the Association of Member Episcopal Conferences in <br>
+            Eastern Africa (AMECEA) and Symposium of Episcopal Conferences and of Africa 
+            and Madagascar (SECAM).</p>
 
         <div class="icon">
             <i class="fa fa-facebook"></i>
